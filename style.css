@@ -1,3 +1,106 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --font-family: outfit, sans sherif;
+}
+
+body {
+  min-width: 375px;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  letter-spacing: .02rem;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+.site-component {
+  background: var(--main-bg);
+  height: 100vh;
+  width: 100%;
+}
+
+.nft-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nft-image {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+h2 {
+  color: var(--white);
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
+
+p {
+  color: var(--soft-blue);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 2rem;
+}
+
+.data-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.ethereum-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ethereum-container p {
+  font-weight: 400;
+  color: var(--cyan);
+}
+
+.time-frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+hr {
+  margin: 1.5rem 0;
+  background: var(--line);
+}
+
+.creator-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.creator-profile .avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: .1rem solid white;
+  border-radius: 5rem;
+  margin-right: 1rem;
+}
+
+.creator-profile span {
+  color: var(--white);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
