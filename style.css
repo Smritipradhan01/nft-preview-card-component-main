@@ -13,7 +13,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-family);
-  letter-spacing: .02rem;
+  letter-spacing: .02;
+  background: var(--main-bg);
 }
 
 h2,
@@ -21,37 +22,45 @@ p {
   margin: 0;
 }
 
-.site-component {
-  background: var(--main-bg);
-  height: 100vh;
-  width: 100%;
-}
-
 .nft-card {
   background: var(--card-bg);
-  padding: 2rem;
-  border-radius: 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 280px;
+  height: 520px;
+  margin: auto;
+  margin-top: 9rem;
 }
 
 .nft-image {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   border-radius: 0.5rem;
+}
+
+.image-container:hover {
+  cursor: pointer;
+  background: var(--cyan);
+  background-image: url(images/icon-view.svg);
+  background-repeat: no-repeat;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 h2 {
   color: var(--white);
   font-weight: 600;
+  font-size: 20px;
   margin: 1.5rem 0;
 }
 
 p {
   color: var(--soft-blue);
   font-weight: 300;
-  font-size: 18px;
-  line-height: 2rem;
+  font-size: 16px;
+  line-height: 1.5rem;
 }
 
 .data-container {
@@ -59,12 +68,25 @@ p {
   display: -ms-flexbox;
   display: flex;
   place-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.data-container img {
+  width: 16px;
+  height: 16px;
+  margin-right: .5rem;
 }
 
 .ethereum-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ethereum-container p {
@@ -76,10 +98,13 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 hr {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   background: var(--line);
 }
 
@@ -87,6 +112,9 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .creator-profile .avatar {
@@ -104,9 +132,10 @@ hr {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--soft-blue);
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: var(--white);
 }
 /*# sourceMappingURL=style.css.map */
